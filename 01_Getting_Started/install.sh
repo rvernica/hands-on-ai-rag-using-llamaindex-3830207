@@ -15,6 +15,7 @@ conda create --name lil_llama_index python=3.10 python-dotenv -y
 echo "Activating the 'lil_llama_index' environment..."
 source $(conda info --base)/etc/profile.d/conda.sh
 conda activate lil_llama_index
+conda update python
 
 # Install Jupyter and JupyterLab
 echo "Installing Jupyter and JupyterLab..."
@@ -34,7 +35,7 @@ pip install qdrant-client==1.9.1
 
 # Install LlamaIndex dependencies for Qdrant
 echo "Installing LlamaIndex dependencies for Qdrant..."
-pip install llama-index-vector-stores-qdrant==0.2.8 llama-index-readers-file==0.1.22
+pip install llama-index-vector-stores-qdrant==0.2.8 llama-index-readers-file==0.1.25
 
 # Install LLM Libraries
 echo "Installing LLM Libraries..."

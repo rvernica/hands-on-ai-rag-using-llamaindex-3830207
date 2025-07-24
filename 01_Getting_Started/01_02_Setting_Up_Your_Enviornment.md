@@ -18,6 +18,7 @@ Once the environment is created, activate it using the following command:
 
 ```
 conda activate lil_llama_index
+conda update python
 ```
 
 ### Install Jupyter and JupyterLab
@@ -63,7 +64,7 @@ Again, it's important to pin the version to the one above so we're on the same p
 LlamaIndex has it's dependencies nicely seperated out. Let's install what we need for Qdrant:
 
 ```python
-pip install llama-index-vector-stores-qdrant==0.2.8 llama-index-readers-file==0.1.22
+pip install llama-index-vector-stores-qdrant==0.2.8 llama-index-readers-file==0.1.25
 ```
 
 # Install LLM Libraries
